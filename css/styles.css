@@ -1,0 +1,1163 @@
+html{
+    height: 100%;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    margin: 0;
+    background-color: transparent;
+    height: 100%;
+}
+
+.contact_body {
+    background: #000;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact_main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    border-radius: 18px;
+    padding: 40px 32px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact_image img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 4px;
+}
+
+
+
+
+.contact_form input,
+.contact_form textarea {
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 8px 10px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 8px;
+    resize: none;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+    outline: 1px none #fff;
+    border-color: #fff;
+    border-bottom: 2px solid #fff;
+
+}
+
+.contact_form button {
+    background: none;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.contact_form button:hover {
+    color: #fff;
+    border: solid 2px #fff;
+    font-weight: 900;
+    padding: 9px 0;
+}
+
+.contact_social {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+}
+
+.contact_social a img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.85;
+    transition: opacity 0.2s, filter 0.2s;
+}
+
+@media (max-width: 700px) {
+    .contact_container {
+        flex-direction: column;
+        gap: 8px;
+        padding: 24px 24px;
+    }
+    .contact_form {
+        width: 100%;
+        min-width: 0;
+    }
+    .contact_image img {
+        max-width: 310px;
+        height: 300px;
+    }
+}
+
+.category_page{
+    background-color: black;
+    height: 100%;
+}
+
+.project_page{
+    background-color: black;
+    height: 100%;
+}
+
+/* Logo Container - Desktop */
+header div.logo-container {
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 60px;
+    z-index: 5; /* Increased to be above navigation */
+}
+
+header nav{
+    width: 240px;
+    background-color: black;
+    position: relative;
+    left: 0;
+    top: 0px;
+}
+
+/* Navigation Menu - Desktop */
+#navbar_container {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    background-color: black;
+    z-index: 4; /* Set below logo but above project grid */
+}
+
+
+/* ABOUT ME STYLE */
+.aboutme-space{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+.aboutme-space .text-container{
+    padding: 24px;
+    max-width: 960px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.aboutme-space .text-container h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: white;
+    font-size: 16px;
+}
+.aboutme-space .text-container p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 48px;
+    padding-top: 170px;
+    padding-bottom: 24px;
+    padding-right: 32px;
+}
+
+header nav ul li{
+    display: block;
+    margin-bottom: 6px;
+    padding: 4px 0;
+    background-color: black;
+}
+
+header nav ul li:hover{
+    background-color: white;
+}
+
+header nav ul li:hover a{
+    font-weight: 800;
+    color: black;
+}
+
+
+header nav ul li a{
+    display:block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    padding-left: 4px;
+}
+
+
+section.home-space{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 192px;
+    overflow: hidden;
+    z-index: 2;  /* Added z-index to stay above slideshow */
+}
+
+section.home-space .text-container{
+    max-width: 960px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+section.home-space .text-container h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: white;
+    font-size: 14px;
+}
+
+section.home-space .text-container p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    color: white;
+    font-size: 12px;
+}
+
+section.project_grid_container{
+    position: absolute;
+    top: 48px;
+    bottom: 80px;
+    left: 48px;
+    right: 48px;
+    padding-top:160px;
+    padding-bottom:80px;
+    z-index:1;
+}
+
+
+.grid_wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 16px;
+    height:100%;
+}
+.project_box{
+    display: flex;
+    align-items: flex-end;
+    background-color: black;
+    padding: 8px;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.project_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.project_box .project_title {
+    position: relative;
+    z-index: 2;
+}
+
+.project_box:hover{
+    border: 2px solid white;
+}
+
+.project_box:hover .project_title{
+    font-weight: 700;
+}
+
+.project_title{
+    position:static;
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project_title:hover{
+    font-weight: 700;
+}
+
+.project_link {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: inherit;
+}
+
+.box1{
+    grid-column: 1/4;
+}
+
+.box2{
+    grid-column: 4/7;
+}
+
+.box3{
+    grid-column: 7/10;
+}
+
+.box4{
+    grid-column: 10/13;
+}
+
+.box5{
+    grid-column: 1/5;
+}
+
+.box6{
+    grid-column: 5/9;
+}
+
+.box7{
+    grid-column: 9/13;
+}
+
+/* Project Page Styles */
+.project_content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 30%;
+    overflow: scroll;
+    scrollbar-width: 1px;
+}
+
+.project_content .text-container {
+    max-width: 960px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.project_content .text-container h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: white;
+    font-size: 16px;
+}
+
+.project_content .text-container p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+}
+
+.project_header {
+    margin-bottom: 48px;
+}
+
+.project_header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.project_date {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+}
+
+.project_description {
+    max-width: 600px;
+    margin-bottom: 48px;
+}
+
+.project_description p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.5;
+}
+
+.project_images {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+.project_images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 16px;
+}
+
+/* Project Gallery Styles */
+.project_gallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+}
+
+.gallery_container {
+    display: inline-block;
+    white-space: nowrap;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery_item {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    aspect-ratio: 16/9; /* This will maintain 16:9 ratio */
+    margin-right: 1px;
+    background-color: gray;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+}
+
+.gallery_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    pointer-events: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.project_gallery::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.project_gallery {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Ensure logo stays above gallery */
+header {
+    position: relative;
+    z-index: 2;
+}
+
+/* Slider Indicator Styles */
+.slider_indicator {
+    position: fixed;
+    top: 68%;
+    left: 48px;
+    right: 48px;
+    height: 6px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.slider_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: white;
+}
+
+.slider_dot {
+    position: absolute;
+    bottom: 3px; /* 2px above line + 1px line height */
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateX(-50%); /* Center the dot on the line */
+    transition: left 0.05s ease-in-out;
+}
+
+/* Background Slideshow Styles */
+.background_slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Changed to -1 to be behind other content */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide img.mobile {
+    display: none;
+}
+
+.slide img.desktop {
+    display: block;
+}
+
+/* Slideshow Controls */
+.slideshow_controls {
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;  /* Added z-index to stay above slideshow */
+}
+
+.background_slideshow:hover .slideshow_controls {
+    opacity: 1;
+}
+
+.control_prev,
+.control_next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    position: relative;
+    color: white;
+    font-size: 12pt;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.control_prev {
+    margin-left: 24px;
+}
+
+.control_next {
+    margin-right: 24px;
+}
+
+.control_prev:hover,
+.control_next:hover {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Remove dots container styles */
+.dots_container {
+    display: none;
+}
+
+/* Tablet styles (481px to 810px) */
+@media screen and (min-width: 481px) and (max-width: 810px) {
+    .project_gallery {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: calc(100% - 224px); /* 200px max-height for .project_content + 24px padding */
+        margin: 0;
+        padding: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        z-index: 1;
+    }
+    .gallery_container,
+    .gallery_item {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Header and Navigation */
+    header div.logo-container {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        margin-left: auto;
+        margin-top: 0;
+        z-index: 5;
+    }
+
+    header nav {
+        right: 0;
+        left: auto;
+        width: 200px;
+    }
+
+    #navbar_container {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        background-color: black;
+        z-index: 4;
+    }
+
+    #navbar_container.visible {
+        display: block;
+    }
+
+    header nav ul {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 120px;
+        display: block;
+        text-align: right;
+    }
+
+    header nav ul li {
+        margin-bottom: 8px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+        text-align: right;
+        padding-left: 0;
+        padding-right: 4px;
+    }
+
+    /* Navigation active states for tablet */
+    header nav ul li:active {
+        background-color: white;
+    }
+
+    header nav ul li:active a {
+        font-weight: 800;
+        color: black;
+    }
+
+    section.project_grid_container {
+        left: 32px;
+        right: 32px;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .grid_wrapper {
+        grid-gap: 12px;
+    }
+
+    .project_box {
+        padding: 6px;
+    }
+
+    .project_title {
+        font-size: 11px;
+    }
+
+    /* Home Space - Tablet */
+    section.home-space {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        max-height: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    section.home-space .text-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section.home-space .text-container h4,
+    section.home-space .text-container p {
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .project_content {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        height: 30%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project_content .text-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .project_content .text-container h4,
+    .project_content .text-container p {
+        font-size: 12px;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .slider_indicator {
+        position: fixed;
+        top: 68%;
+        left: 32px;
+        right: 32px;
+    }
+
+    /* Slideshow Controls - Tablet */
+
+    .control_prev {
+        margin-left: 12px;
+    }
+
+    .control_next {
+        margin-right: 12px;
+    }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+    .project_gallery {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        z-index: 1;
+    }
+    .gallery_container,
+    .gallery_item {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Header and Navigation */
+    header div.logo-container {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        margin-left: auto;
+        margin-top: 0;
+        z-index: 5; /* Keep consistent with desktop */
+    }
+
+    header nav {
+        right: 0;
+        left: auto;
+        width: 200px;
+    }
+
+    #navbar_container {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        background-color: black;
+        z-index: 4; /* Keep consistent with desktop */
+    }
+
+    #navbar_container.visible {
+        display: block;
+    }
+
+    header nav ul {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 120px;
+        display: block;
+        text-align: right;
+    }
+
+    header nav ul li {
+        margin-bottom: 8px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+        text-align: right;
+        padding-left: 0;
+        padding-right: 4px;
+    }
+
+    /* Navigation active states for mobile */
+    header nav ul li:active {
+        background-color: white;
+    }
+
+    header nav ul li:active a {
+        font-weight: 800;
+        color: black;
+    }
+
+    /* Project Grid */
+    section.project_grid_container {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        overflow-y: scroll;
+        height: calc (100% - 48px); /* Viewport height minus top padding and bottom padding */
+    }
+
+    .grid_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 4px; /* Reduced from 16px to 8px */
+        height: auto;
+        padding: 80px 12px 24px 12px;
+    }
+
+    .project_box {
+        aspect-ratio: 1/1;
+        padding: 4px;
+        grid-column: auto !important;
+    }
+
+    .project_box img {
+        object-fit: cover;
+    }
+
+    .project_title {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    /* Override specific box grid-column assignments for mobile */
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7 {
+        grid-column: auto !important;
+    }
+
+    /* Background Slideshow */
+    .background_slideshow {
+        aspect-ratio: 9/16;
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+/* Slideshow Controls - Mobile */
+
+    .control_prev {
+        margin-left: 12px;
+    }
+
+    .control_next {
+        margin-right: 12px;
+    }
+
+    .slide {
+        aspect-ratio: 9/16;
+    }
+
+    .slide img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Hide desktop images on mobile */
+    .slide img.desktop {
+        display: none;
+    }
+
+    /* Show mobile images */
+    .slide img.mobile {
+        display: block;
+    }
+
+    /* Project Gallery */
+    .project_gallery {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        /* height: calc(100vh - 200px); /* Account for text section height */
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        z-index: 1;
+    }
+
+    .gallery_container {
+        display: inline-block;
+        white-space: nowrap;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .gallery_item {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        aspect-ratio: 2/3;
+        margin-right: 1px;
+        background-color: gray;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+    }
+
+    .gallery_item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        user-select: none;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        pointer-events: none;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .project_gallery::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .project_gallery {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Text Containers */
+    section.home-space {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        max-height: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    section.home-space .text-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section.home-space .text-container h4,
+    section.home-space .text-container p {
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .project_content {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        max-height: 30%;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    .project_content .text-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .project_content .text-container h4,
+    .project_content .text-container p {
+        font-size: 12px;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    /* Slider Indicator */
+    .slider_indicator {
+        position: fixed;
+        top: 65%;
+        left: 24px;
+        right: 24px;
+        height: 6px;
+        pointer-events: none;
+        z-index: 10;
+    }
+
+    .slider_line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: white;
+    }
+
+    .slider_dot {
+        position: absolute;
+        bottom: 3px; /* 2px above line + 1px line height */
+        left: 0;
+        width: 4px;
+        height: 4px;
+        background-color: white;
+        border-radius: 50%;
+        transform: translateX(-50%); /* Center the dot on the line */
+        transition: left 0.05s ease-in-out;
+    }
+
+    /* Hide desktop images on mobile */
+    .gallery_item img.desktop {
+        display: none;
+    }
+
+    /* Show mobile images */
+    .gallery_item img.mobile {
+        display: block;
+    }
+
+    /* Project box active states for mobile */
+    .project_box:active {
+        border: 2px solid white;
+    }
+
+    .project_box:active .project_title {
+        font-weight: 700;
+    }
+}
+
+/* Desktop styles (default) */
+.slide img.mobile {
+    display: none;
+}
+
+.slide img.desktop {
+    display: block;
+}
+
+.gallery_item img.mobile {
+    display: none;
+}
+
+.gallery_item img.desktop {
+    display: block;
+}
+
+@media screen and (max-width: 810px) {
+    .slide img.mobile {
+        display: block;
+    }
+    
+    .slide img.desktop {
+        display: none;
+    }
+}
